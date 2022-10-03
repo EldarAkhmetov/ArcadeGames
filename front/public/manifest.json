@@ -1,0 +1,8 @@
+{
+  "short_name": "sea_battle",
+  "name": "sea_battle",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

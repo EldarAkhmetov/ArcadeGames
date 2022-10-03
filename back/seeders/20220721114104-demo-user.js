@@ -1,0 +1,100 @@
+"use strict";
+
+module.exports = {
+    async up(queryInterface, Sequelize) {
+        return queryInterface.bulkInsert("Users", [
+            {
+                login: "test",
+                password: "test",
+                games: 200,
+                wins: 199,
+                cage1: 800,
+                cage2: 400,
+                cage3: 200,
+                cage4: 100,
+                fifteenRecord: 10,
+                fifteenMedium: 25,
+                fifteenGames: 100,
+                mineEasy: 20,
+                mineNormal: 45,
+                mineHard: 30,
+                mineEasyWin: 15,
+                mineNormalWin: 25,
+                mineHardWin: 10,
+                createdAt: new Date(),
+                updatedAt: new Date(),
+            },
+            {
+                login: "Sirius",
+                password: "123",
+                games: 188,
+                wins: 180,
+                cage1: 5,
+                cage2: 5,
+                cage3: 5,
+                cage4: 5,
+                mineEasy: 10,
+                mineNormal: 25,
+                mineHard: 10,
+                mineEasyWin: 8,
+                mineNormalWin: 5,
+                mineHardWin: 0,
+                fifteenRecord: 20,
+                fifteenGames: 200,
+                fifteenMedium: 35,
+                createdAt: new Date(),
+                updatedAt: new Date(),
+            },
+            {
+                login: "Canopus",
+                password: "123",
+                games: 170,
+                wins: 160,
+                cage1: 5,
+                cage2: 5,
+                cage3: 5,
+                cage4: 5,
+                fifteenRecord: 30,
+                fifteenGames: 300,
+                fifteenMedium: 45,
+                mineEasy: 23,
+                mineNormal: 25,
+                mineHard: 30,
+                mineEasyWin: 10,
+                mineNormalWin: 15,
+                mineHardWin: 6,                
+                createdAt: new Date(),
+                updatedAt: new Date(),
+            },
+            {
+                login: "Arcturus",
+                password: "123",
+                games: 160,
+                wins: 150,
+                cage1: 5,
+                cage2: 5,
+                cage3: 5,
+                cage4: 5,
+                fifteenRecord: 40,
+                fifteenGames: 400,
+                mineEasy: 0,
+                mineNormal: 5,
+                mineHard: 0,
+                mineEasyWin: 0,
+                mineNormalWin: 4,
+                mineHardWin: 0,
+                createdAt: new Date(),
+                updatedAt: new Date(),
+            },
+        ]);
+    },
+
+    async down(queryInterface, Sequelize) {
+        /**
+         * Add commands to revert seed here.
+         *
+         * Example:
+         * await queryInterface.bulkDelete('People', null, {});
+         */
+    },
+};
